@@ -24,3 +24,8 @@ print("Greater than---->",5>3)
 print("Less than---->",5<2)
 print("Greater than or equal to---->",5>=5)
 print("Less than or equal to---->",5<=5)
+
+# Logical Operators
+print("And Operator---->",2 < 5 and  7 < 10)
+print("Or Operator---->",2 < 5 and  11 < 10)
+print("Not ---->",2 < 5 and  7 < 10)
