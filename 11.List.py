@@ -66,19 +66,62 @@ del thislist10[0]
 print("del--->",thislist10)
 
 #The clear() method empties the list.
-thislist = ["apple", "banana", "cherry"]
-thislist.clear()
-print("clear--->",thislist)
+thislist11 = ["apple", "banana", "cherry"]
+thislist11.clear()
+print("clear--->",thislist11)
 
 #Loop Through a List
 
-looplist = ["apple", "banana", "cherry"]
-for x in looplist:
+looplist12 = ["apple", "banana", "cherry"]
+for x in looplist12:
   print(x)
 
 #Using a While Loop
-thislist = ["apple", "banana", "cherry"]
+thislist13 = ["apple", "banana", "cherry"]
 i = 0
-while i < len(thislist):
-  print(thislist[i])
+while i < len(thislist13):
+  print(thislist13[i])
   i = i + 1
+
+#List Comprehension
+#List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+#The Syntax
+#newlist = [expression for item in iterable if condition == True]
+
+fruits2 = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist2 = [x for x in fruits2 if x != "banana"]
+print("newlist--->",newlist2)
+
+#Python sort lists
+thislist14 = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist14.sort()
+print(thislist14)
+
+#Sort Descending
+
+thislist15 = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist15.sort(reverse = True)
+print(thislist15)
+
+#Use the copy() method
+
+copylist = ["apple", "banana", "cherry"]
+newcopy = copylist.copy()
+print(newcopy)
+
+#Join Two Lists
+list30 = ["a", "b", "c"]
+list31 = [1, 2, 3]
+
+list33 = list30 + list31
+print(list33)
